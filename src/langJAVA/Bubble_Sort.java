@@ -1,7 +1,6 @@
 package langJAVA;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class Bubble_Sort {
@@ -43,13 +42,13 @@ public class Bubble_Sort {
 				if (scores[j - 1] > scores[j]) { // j가 0부터 시작되면 out of bounds
 					temp = scores[j - 1];
 					scores[j - 1] = scores[j];
-					scores[j] = temp; 
+					scores[j] = temp;
 				} // else (score[j-1]<scores[j]) 의 경우는 신경 써줄 필요가없다
-				// 0번 인덱스보다 1번 인덱스가 클 경우 그대로 두면 되기때문
+					// 0번 인덱스보다 1번 인덱스가 클 경우 그대로 두면 되기때문
 			}
 		}
 
-		//출력은 내림차순으로 했습니다.
+		// 출력은 내림차순으로 했습니다.
 		System.out.println("\nRank");
 		for (int i = 0; i < scores.length; i++) {
 			System.out.println((scores.length - i) + "등 : " + scores[i] + "점");
